@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <!-- loading -->
+    <?php include("layouts/loading.php"); ?>
+
     <!-- header -->
     <?php include("layouts/header.php"); ?>
 

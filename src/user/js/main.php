@@ -7,6 +7,10 @@
 <script>
     $(document).ready(function() {
 
+        $('#preloader').fadeOut(400, function() {
+            $('.content').addClass('animate-up');
+        });
+
         const $btnToggle = $('#theme-toggle');
         const $html = $('html');
 
