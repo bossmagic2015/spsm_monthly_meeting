@@ -21,7 +21,6 @@
         align-items: center;
         width: 100%;
         margin-bottom: 1.5rem;
-        /* ใช้ margin-bottom แทนการดันจากด้านบนอย่างเดียว */
         padding-left: 1rem;
     }
 
@@ -29,7 +28,7 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background-color: var(--pwa-base);
+        background-color: var(--card-bg);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -48,7 +47,6 @@
     .list-label {
         font-size: 0.85rem;
         color: var(--text-muted);
-        /* สีเทาสำหรับหัวข้อ */
         margin-bottom: 2px;
     }
 

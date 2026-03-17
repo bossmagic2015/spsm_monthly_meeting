@@ -4,7 +4,7 @@
             <div class="d-flex w-100 justify-content-between align-items-center">
 
                 <div class="brand-logo">
-                    <img src="../../assets/bg/spsm.png" alt="Logo" style="height: 18px; width: auto;">
+                    <img src="../assets/bg/spsm.png" alt="Logo" style="height: 18px; width: auto;">
                 </div>
 
                 <div class="d-flex align-items-baseline gap-3">

@@ -57,4 +57,10 @@
         background-color: #035c3d;
         color: white
     }
+
+    .page-title {
+        color: var(--primary-color);
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
 </style>

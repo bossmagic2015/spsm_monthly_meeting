@@ -4,6 +4,7 @@
 <head>
     <!-- head -->
     <?php include("layouts/head.php"); ?>
+    <?php include("css/personal.php"); ?>
 </head>
 
 <body>
@@ -20,7 +21,6 @@
             <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
                 <!-- img -->
                 <div class="person-img">
-
                 </div>
 
                 <!-- title -->
