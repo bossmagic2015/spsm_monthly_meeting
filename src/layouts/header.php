@@ -4,7 +4,7 @@
             <div class="d-flex w-100 justify-content-between align-items-center">
 
                 <div class="brand-logo">
-                    <img src="../assets/bg/spsm.png" alt="Logo" style="height: 18px; width: auto;">
+                    <img src="<?= ASSETS_URL ?>/bg/spsm.png" alt="Logo" style="height: 18px; width: auto;">
                 </div>
 
                 <div class="d-flex align-items-baseline gap-3">
@@ -25,7 +25,7 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mainMenu" aria-labelledby="mainMenuLabel">
     <div class="offcanvas-header p-4">
-        <h5 class="offcanvas-title fw-bold" id="mainMenuLabel text-danger">Title</h5>
+        <h5 class="offcanvas-title fw-bold" id="mainMenuLabel text-danger">ทดสอบ ระบบ</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body p-0">

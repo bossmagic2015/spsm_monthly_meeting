@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. ถ้ามีการเรียกชื่อไฟล์ตรงๆ ในโฟลเดอร์ Root ให้หยุดทำงาน (เช่น assets, config)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. ส่งต่อ Requests ทั้งหมดเข้าไปที่โฟลเดอร์ src 
+# โดยที่ URL ของ User จะยังคงเดิม (ไม่มีคำว่า src)
+RewriteRule ^(.*)$ src/$1 [L]

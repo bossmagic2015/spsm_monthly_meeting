@@ -24,7 +24,7 @@
                 <div class="main-card">
                     <div class="card-header-img">
                         <div class="img-placeholder">
-                            <img src="../assets/bg/bgspsm.jpg" alt="">
+                            <img src="<?= ASSETS_URL ?>/bg/bgspsm.jpg" alt="">
                         </div>
                     </div>
 

@@ -1,3 +1,5 @@
+<?php include("layouts/config.php"); ?>
+
 <!DOCTYPE html>
 <html lang="th">
 
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ประชุมบุคลากร - โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)</title>
 
-    <link rel="icon" href="../assets/bg/logo.png">
+    <link rel="icon" href="<?= ASSETS_URL ?>/bg/logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.22/dist/sweetalert2.min.css" rel="stylesheet">
@@ -22,7 +24,7 @@
         <div id="main-content">
             <div class="img-header">
                 <div class="container d-flex justify-content-center">
-                    <img class="navbar-brand-img" src="../assets/bg/logo.png" alt="Ombe Logo">
+                    <img class="navbar-brand-img" src="<?= ASSETS_URL ?>/bg/logo.png" alt="logo">
                 </div>
             </div>
 
@@ -91,7 +93,7 @@
                 }
 
                 let result = await $.ajax({
-                    url: '../router/auth.php',
+                    url: 'router/auth.php',
                     method: 'post',
                     dataType: 'json',
                     data: {
