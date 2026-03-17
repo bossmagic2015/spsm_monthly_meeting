@@ -30,10 +30,54 @@
 
                 <!-- list -->
                 <div class="person-list">
-                    <div class="list-icon"></div>
-                    <div class="list-detail"></div>
+                    <div class="list-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div class="list-detail">
+                        <div class="list-label">หน่วยงาน</div>
+                        <div class="list-data">งานเทคโนโลยีสารสนเทศ</div>
+                    </div>
                 </div>
 
+                <div class="person-list">
+                    <div class="list-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <div class="list-detail">
+                        <div class="list-label">ตำแหน่ง</div>
+                        <div class="list-data">นักวิชาการคอมพิวเตอร์</div>
+                    </div>
+                </div>
+
+                <div class="person-list">
+                    <div class="list-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <div class="list-detail">
+                        <div class="list-label">วันเริ่มทำงาน</div>
+                        <div class="list-data">28 มีนาคม 2566</div>
+                    </div>
+                </div>
+
+                <div class="person-list">
+                    <div class="list-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="list-detail">
+                        <div class="list-label">อีเมล</div>
+                        <div class="list-data">veerayut.a41@gmail.com</div>
+                    </div>
+                </div>
+
+                <div class="person-list">
+                    <div class="list-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="list-detail">
+                        <div class="list-label">เบอร์โทรศัพท์</div>
+                        <div class="list-data">061-106-0253</div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -205,12 +205,12 @@
         min-height: 80vh;
         padding: 20px;
         text-align: center;
-        background-color: #ffffff;
+        background-color: var(--pwa-base);
     }
 
     #offline-content .icon {
         font-size: 8rem;
-        color: #dee2e6;
+        color: var(--text-muted);
         margin-bottom: 1.5rem;
         transition: all 0.3s ease;
         animation: float 3s ease-in-out infinite;
@@ -233,12 +233,12 @@
 
     #offline-content h3 {
         font-weight: 700;
-        color: #343a40;
+        color: var(--text-main);
         margin-bottom: 10px;
     }
 
     #offline-content p {
-        color: #6c757d;
+        color: var(--text-muted);
         max-width: 300px;
         line-height: 1.6;
     }
@@ -247,10 +247,11 @@
     .menu-trigger {
         cursor: pointer;
         transition: opacity 0.2s;
+        color: var(--text-main);
     }
 
     .menu-trigger i {
-        color: var(--text-muted);
+        color: var(--text-main);
         font-size: 26px;
     }
 
@@ -261,13 +262,27 @@
     .offcanvas {
         z-index: 5000;
         border-radius: 20px 0 0 20px;
+        background-color: var(--pwa-base);
+        color: var(--text-main);
     }
 
-    .offcanvas-header {
-        border-bottom: 1px solid #f8f9fa;
+    .btn-close {
+        background-color: transparent;
+        opacity: 0.8;
+        transition: all 0.2s ease;
+    }
+
+    .list-group-item {
+        background-color: var(--pwa-base);
+        color: var(--text-main);
     }
 
     [data-theme="dark"] .menu-trigger {
         color: var(--text-muted);
+    }
+
+    [data-theme='dark'] .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);     
+        opacity: 0.9;
     }
 </style>
