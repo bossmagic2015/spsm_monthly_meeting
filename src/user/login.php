@@ -18,48 +18,60 @@
 <body>
     <!-- Content -->
     <main class="content">
-        <div class="img-header">
-            <div class="container d-flex justify-content-center">
-                <img class="navbar-brand-img" src="../../assets/bg/logo.png" alt="Ombe Logo">
-            </div>
-        </div>
-
-        <div class="container px-4">
-            <div class="row">
-                <div class="col-12 login-header">
-                    <h4 class="mb-2">ประชุมบุคลากร</h4>
-                    <p>โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)<br>ใช้สำหรับการสแกนลงทะเบียนเข้า-ออก ประชุมประจำเดือน</p>
+        <div id="main-content">
+            <div class="img-header">
+                <div class="container d-flex justify-content-center">
+                    <img class="navbar-brand-img" src="../../assets/bg/logo.png" alt="Ombe Logo">
                 </div>
+            </div>
 
-                <div class="col-12">
-                    <form id="loginForm">
-                        <div class="mb-4">
-                            <label class="form-label">Username</label>
-                            <input id="username" type="text" class="form-control form-control-custom" placeholder="เลขประจำตัวประชาชน 5 ตัวหลัง">
-                        </div>
+            <div class="container px-4">
+                <div class="row">
+                    <div class="col-12 login-header">
+                        <h4 class="mb-2">ประชุมบุคลากร</h4>
+                        <p>โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)<br>ใช้สำหรับการสแกนลงทะเบียนเข้า-ออก ประชุมประจำเดือน</p>
+                    </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Password</label>
-                            <div class="input-group">
-                                <input type="password" id="password" class="form-control form-control-custom" placeholder="เบอร์โทรศัพท์" autocomplete="off">
-                                <span class="input-group-text-custom">
-                                    <i class="bi bi-eye-slash" id="togglePassword" style="cursor: pointer; color: var(--primary-color);"></i>
-                                </span>
+                    <div class="col-12">
+                        <form id="loginForm">
+                            <div class="mb-4">
+                                <label class="form-label">Username</label>
+                                <input id="username" type="text" class="form-control form-control-custom" placeholder="เลขประจำตัวประชาชน 5 ตัวหลัง">
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="password" class="form-control form-control-custom" placeholder="เบอร์โทรศัพท์" autocomplete="off">
+                                    <span class="input-group-text-custom">
+                                        <i class="bi bi-eye-slash" id="togglePassword" style="cursor: pointer; color: var(--primary-color);"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-pill btn-login w-100 mt-4">เข้าสู่ระบบ</button>
+                        </form>
+
+                        <div class="helper-text">
+                            ติดต่อข้อมูลเพิ่มเติม <a href="https://lin.ee/E3PDOZ5" target="_blank" class="link-green">ADD LINE</a>
                         </div>
-
-                        <button type="submit" class="btn btn-pill btn-login w-100 mt-4">เข้าสู่ระบบ</button>
-                    </form>
-
-                    <div class="helper-text">
-                        ติดต่อข้อมูลเพิ่มเติม <a href="https://lin.ee/E3PDOZ5" target="_blank" class="link-green">ADD LINE</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="offline-content" style="display: none; text-align: center; padding: 50px;">
+            <i class="bi bi-wifi-off"></i>
+            <h2 style="margin-top: 20px;">คุณไม่ได้เชื่อมต่ออินเทอร์เน็ต</h2>
+            <p>กรุณาตรวจสอบการเชื่อมต่อของคุณและลองใหม่อีกครั้ง</p>
+            <button onclick="window.location.reload()" class="btn-pill" style="background: var(--primary-color); color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                ลองใหม่อีกครั้ง
+            </button>
+        </div>
     </main>
 
     <?php include("layouts/cdn.php"); ?>
+    <?php include('js/middleware.php'); ?>
 
     <script>
         $(document).ready(function() {

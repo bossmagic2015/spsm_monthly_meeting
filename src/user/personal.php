@@ -23,6 +23,7 @@
     <!-- cdn -->
     <?php include("layouts/cdn.php"); ?>
     <!-- js -->
+    <?php include('js/middleware.php'); ?>
     <?php include("js/main.php"); ?>
 </body>
 

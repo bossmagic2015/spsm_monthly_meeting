@@ -9,7 +9,7 @@
 <body>
     <!-- loading -->
     <?php include("layouts/loading.php"); ?>
-    
+
     <!-- header -->
     <?php include("layouts/header.php"); ?>
 
@@ -23,6 +23,7 @@
     <!-- cdn -->
     <?php include("layouts/cdn.php"); ?>
     <!-- js -->
+    <?php include('js/middleware.php'); ?>
     <?php include("js/main.php"); ?>
 </body>
 
