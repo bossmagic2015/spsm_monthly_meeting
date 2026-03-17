@@ -198,21 +198,48 @@
 
     /* offline content */
     #offline-content {
-        display: none;
-        padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 80vh;
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+    }
 
-        .icon {
-            font-size: 10rem;
-            color: var(--text-muted);
+    #offline-content .icon {
+        font-size: 8rem;
+        color: #dee2e6;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* เอฟเฟกต์ลอยนิ่งๆ ให้ดูมีชีวิตชีวา */
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
         }
 
-        .icon:hover {
-            transform: translateY(-5px);
-            cursor: pointer;
+        50% {
+            transform: translateY(-15px);
         }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    #offline-content h3 {
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 10px;
+    }
+
+    #offline-content p {
+        color: #6c757d;
+        max-width: 300px;
+        line-height: 1.6;
     }
 </style>
