@@ -21,7 +21,7 @@
                     <a href="personal.php" class="nav-link text-center pt-2 pb-1 text-muted <?= $basePath == 'personal.php' ? 'active' : '' ?>">
                         <i class="bi bi-person fs-4 d-block"></i>
                         <span style="font-size: 10px;">ข้อมูลส่วนตัว</span>
-                    </a>                 
+                    </a>
                 </div>
             </div>
         </nav>

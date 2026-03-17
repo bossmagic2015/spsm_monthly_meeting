@@ -277,12 +277,18 @@
         color: var(--text-main);
     }
 
+    .list-group-item:focus {
+        background-color: var(--pwa-base);
+        color: var(--text-main);
+    }
+
+
     [data-theme="dark"] .menu-trigger {
         color: var(--text-muted);
     }
 
     [data-theme='dark'] .btn-close {
-        filter: invert(1) grayscale(100%) brightness(200%);     
+        filter: invert(1) grayscale(100%) brightness(200%);
         opacity: 0.9;
     }
 </style>
