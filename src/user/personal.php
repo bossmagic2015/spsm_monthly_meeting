@@ -15,7 +15,30 @@
 
     <!-- content -->
     <main class="content">
-        Personal
+        <!-- online -->
+        <div id="main-content">
+            <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
+                <!-- img -->
+                <div class="person-img">
+
+                </div>
+
+                <!-- title -->
+                <div class="person-title fw-bold">
+                    ทดสอบ ระบบ
+                </div>
+
+                <!-- list -->
+                <div class="person-list">
+                    <div class="list-icon"></div>
+                    <div class="list-detail"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- offline -->
+        <?php include('offline.php') ?>
     </main>
 
     <!-- footer -->

@@ -242,4 +242,32 @@
         max-width: 300px;
         line-height: 1.6;
     }
+
+    /* side menu */
+    .menu-trigger {
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+
+    .menu-trigger i {
+        color: var(--text-muted);
+        font-size: 26px;
+    }
+
+    .menu-trigger:active {
+        opacity: 0.5;
+    }
+
+    .offcanvas {
+        z-index: 5000;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .offcanvas-header {
+        border-bottom: 1px solid #f8f9fa;
+    }
+
+    [data-theme="dark"] .menu-trigger {
+        color: var(--text-muted);
+    }
 </style>

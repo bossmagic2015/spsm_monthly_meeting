@@ -9,3 +9,4 @@
 
     <?php include("css/style.php"); ?>
     <?php include("css/main.php"); ?>
+    <?php include("css/personal.php"); ?>
