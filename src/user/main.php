@@ -15,18 +15,13 @@
 
     <!-- content -->
     <main class="content">
+        <!-- online -->
         <div id="main-content">
-            Scan
+            <h4>ไม่ได้เชื่อมต่อ</h4>
         </div>
 
-        <div id="offline-content" style="display: none; text-align: center; padding: 50px;">
-            <i class="fas fa-wifi-slash" style="font-size: 4rem; color: #ccc;"></i>
-            <h2 style="margin-top: 20px;">คุณไม่ได้เชื่อมต่ออินเทอร์เน็ต</h2>
-            <p>กรุณาตรวจสอบการเชื่อมต่อของคุณและลองใหม่อีกครั้ง</p>
-            <button onclick="window.location.reload()" class="btn-pill" style="background: var(--primary-color); color: white; padding: 10px 20px; border: none; cursor: pointer;">
-                ลองใหม่อีกครั้ง
-            </button>
-        </div>
+        <!-- offline -->
+        <?php include('offline.php') ?>
     </main>
 
     <!-- footer -->

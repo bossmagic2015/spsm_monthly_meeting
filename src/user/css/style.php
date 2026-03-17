@@ -148,30 +148,27 @@
         transition: all 0.3s;
     }
 
+    /* Loading */
     .preloader-backdrop {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        /* พื้นหลังบางๆ ปรับสีตามธีม */
         background-color: var(--pwa-base);
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 9999;
-        /* สูงที่สุดเพื่อให้ทับทุกอย่าง */
         opacity: 1;
         transition: opacity 0.5s ease, visibility 0.5s;
     }
 
-    /* เมื่อโหลดเสร็จจะใช้คลาสนี้สั่งซ่อน */
     .preloader-backdrop.fade-out {
         opacity: 0;
         visibility: hidden;
     }
 
-    /* ตัว Loader เดิมของคุณ (ปรับแก้เล็กน้อยให้ดู Smooth) */
     .loader {
         width: 50px;
         padding: 8px;
@@ -186,7 +183,6 @@
         -webkit-mask-composite: source-out;
         mask-composite: subtract;
         animation: l3 1s infinite linear;
-        /* ปรับจาก 3s เป็น 1s ให้ดูหมุนเร็วขึ้นสไตล์ Loader */
     }
 
     @keyframes l3 {
@@ -198,6 +194,25 @@
     /* กรณี Dark Mode ให้พื้นหลังมืดลง */
     [data-theme="dark"] .preloader-backdrop {
         background-color: rgba(18, 18, 18, 0.9);
-        /* มืดและมีความโปร่งแสงนิดๆ */
+    }
+
+    /* offline content */
+    #offline-content {
+        display: none;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            font-size: 10rem;
+            color: var(--text-muted);
+        }
+
+        .icon:hover {
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
     }
 </style>

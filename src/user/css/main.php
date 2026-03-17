@@ -46,4 +46,15 @@
         font-weight: 400;
         margin-top: 2px;
     }
+
+    .btn-login {
+        background-color: var(--primary-color);
+        color: white;
+        margin-top: 20px;
+    }
+
+    .btn-login:hover {
+        background-color: #035c3d;
+        color: white
+    }
 </style>

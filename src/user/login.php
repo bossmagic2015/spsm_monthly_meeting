@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    <!-- Content -->
-    <main class="content">
+    <!-- content -->
+    <div class="content">
+        <!-- online -->
         <div id="main-content">
             <div class="img-header">
                 <div class="container d-flex justify-content-center">
@@ -60,15 +61,9 @@
             </div>
         </div>
 
-        <div id="offline-content" style="display: none; text-align: center; padding: 50px;">
-            <i class="bi bi-wifi-off"></i>
-            <h2 style="margin-top: 20px;">คุณไม่ได้เชื่อมต่ออินเทอร์เน็ต</h2>
-            <p>กรุณาตรวจสอบการเชื่อมต่อของคุณและลองใหม่อีกครั้ง</p>
-            <button onclick="window.location.reload()" class="btn-pill" style="background: var(--primary-color); color: white; padding: 10px 20px; border: none; cursor: pointer;">
-                ลองใหม่อีกครั้ง
-            </button>
-        </div>
-    </main>
+        <!-- offline -->
+        <?php include('offline.php') ?>
+    </div>
 
     <?php include("layouts/cdn.php"); ?>
     <?php include('js/middleware.php'); ?>

@@ -1,9 +1,9 @@
 const CACHE_NAME = "spsm_monthly_meeting-v1";
 const ASSETS_TO_CACHE = [
-  "/",
-  "main.php",
-  "css/style.php",
-  "css/main.php",
+  // "/",
+  // "main.php",
+  // "css/style.php",
+  // "css/main.php",
   "https://code.jquery.com/jquery-3.7.1.min.js",
 ];
 
